@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Animated Robot</title>
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #ebebeb">
+
+        <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+        <a-plane id="ground" color="black" position="0 0 0" rotation="-90 0 0" width="20" height="10"></a-plane>
+        <a-circle position="0 9.15 0" color="orange" radius="0.8" material="side:double"></a-circle>
+        <a-cylinder color="#757575" height="1.5" radius="0.05" position="0 11 0" animation="property: position; from:-0.2 10.4 -0.1;to: 0.2 10.4 -0.1;dir:alternate;loop: true; dur: 1000"> </a-cylinder>
+        <a-sphere color="#ef5350" radius="0.3" position="0 11 0" animation="property: position; from:-0.2 11 -0.1;to: 0.2 11 -0.1;dir:alternate;loop: true; dur: 1000"> </a-sphere>
+        <a-box id="head" position="0 8 0" color="#0276aa" width="3.2" height="2.2"></a-box>
+        <a-sphere position="-0.63 8.3 0.2" color="fff" radius="0.6" rotation="0 10 0"></a-sphere>
+        <a-sphere position="0.63 8.3 0.2" color="fff" radius="0.6" rotation="0 -10 0"></a-sphere>
+        <a-sphere color="#000" radius="0.15" position="-0.63 8.1 0.9" animation="property: position; from:-0.63 8.1 -0.9;to: -0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000"> </a-sphere>
+        <a-sphere color="#000" radius="0.15" position="0.63 8.1 0.9" animation="property: position; from:0.63 8.1 -0.9;to: 0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000"> </a-sphere>
+        <a-entity position="0 8.2 0.55" rotation="0 0 120" geometry="primitive:ring;thetaStart:100;thetaLength:100;radiusOuter:1;radiusInner:0.9" material="side:double;color:orange;"></a-entity>
+        <a-box id="neck" position="0 6.7 0" color="orange" width="2" height="0.4"></a-box>
+        <a-box id="body" position="0 4.5 0" color="#0276aa" width="4.5" height="4"></a-box>
+        <a-box id="body" position="-1.2 5.8 0.1" color="yellow" width="1" height="1"></a-box>
+        <a-box id="body" position="0 5.8 0.1" color="darkorange" width="1" height="1"></a-box>
+        <a-box id="body" position="1.2 5.8 0.1" color="yellow" width="1" height="1"></a-box>
+        <a-box id="body" position="-1.2 4.6 0.1" color="magenta" width="1" height="1"></a-box>
+        <a-box id="body" position="0 4.6 0.1" color="purple" width="1" height="1"></a-box>
+        <a-box id="body" position="1.2 4.6 0.1" color="magenta" width="1" height="1"></a-box>
+        <a-box id="body" position="-1.2 3.4 0.1" color="yellow" width="1" height="1"></a-box>
+        <a-box id="body" position="0 3.4 0.1" color="magenta" width="1" height="1"></a-box>
+        <a-box id="body" position="1.2 3.4 0.1" color="yellow" width="1" height="1"></a-box>
+        <a-cylinder id="arm" color="darkorange" height="1.8" radius="0.35" position="-2.5 5.4 0" rotation="0 0 150"></a-cylinder>
+        <a-cylinder color="darkorange" height="1.8" radius="0.35" position="-3.81 5.15 0" rotation="0 0 51"></a-cylinder>
+        <a-sphere id="arm" color="red" radius="0.4" position="-3 4.5 0.1"></a-sphere>
+        <a-octahedron id="arm" position="-4.9 6.1 0" color="#FF926B" radius="0.8" rotation="0 0 37"></a-octahedron>   
+        <a-cylinder id="arm" color="darkorange" height="1.8" radius="0.35" position="4.4 5.6 0" rotation="0 0 130"></a-cylinder>
+        <a-cylinder id="arm" color="darkorange" height="1.8" radius="0.35" position="2.8 5.5 0" rotation="0 0 65"></a-cylinder>
+        <a-sphere id="arm" color="red" radius="0.4" position="3.7 5 0.1"></a-sphere>
+        <a-octahedron id="arm" position="5.4 6.5 0" color="#FF926B" radius="0.8" rotation="0 0 143"></a-octahedron>   
+        <a-cylinder id="leg" color="darkorange" height="2.4" radius="0.4" position="1 1.4 0"></a-cylinder>
+        <a-cylinder id="leg" color="darkorange" height="2.4" radius="0.4" position="-1 1.4 0"></a-cylinder>
+        <a-sphere id="feet" color="red" radius="0.8" position="1 0.2 0.1"></a-sphere>
+        <a-sphere id="feet" color="red" radius="0.8" position="-1 0.2 0.1"></a-sphere>
+
+    </a-scene>
+</body>
+
+</html>
